@@ -1,9 +1,12 @@
 {
+  "homepage": "https://mahmoudaboalwafa1.github.io/Foodfinda_website",
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -17,7 +20,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
-    "react-reveal": "^1.2.2",
     "react-router-dom": "^6.8.2",
     "redux": "^4.2.1",
     "yup": "^1.0.2"
@@ -26,6 +28,8 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "gh-pages": "^5.0.0",
     "vite": "^4.1.0"
   }
 }

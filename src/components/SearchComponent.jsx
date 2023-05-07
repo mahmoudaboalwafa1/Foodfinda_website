@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaAngleDown, FaSearch } from "react-icons/fa";
-import { LightSpeed } from "react-reveal";
 import { dataBox } from "../data/dataLanding";
 
 const SearchComponent = () => {
@@ -16,15 +15,13 @@ const SearchComponent = () => {
         <button onClick={showBox}>
           {value} <FaAngleDown />
         </button>
-        <LightSpeed right>
-          <ul className={`${show ? "show" : ""}`}>
-            {dataBox.map((li, index) => (
-              <li onClick={() => setValue(li)} key={index}>
-                {li}
-              </li>
-            ))}
-          </ul>
-        </LightSpeed>
+        <ul className={`${show ? "show" : ""}`}>
+          {dataBox.map((li, index) => (
+            <li onClick={() => setValue(li)} key={index}>
+              {li}
+            </li>
+          ))}
+        </ul>
       </div>
       <form className="align-center w-100" onSubmit={(e) => e.preventDefault()}>
         <input type="search" placeholder="Search" />
