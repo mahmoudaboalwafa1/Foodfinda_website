@@ -1,0 +1,38 @@
+.quick-search {
+  background-image: url("../../../assets/images/body-bg.png");
+  background-size: cover;
+  background-position-y: 100vh;
+}
+
+.quick-search .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: var(--main-px);
+}
+
+div.quick-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+div.quick-card img {
+  border: solid 1px #fff;
+  width: 180px;
+  height: 180px;
+  padding: var(--main-px);
+}
+
+div.quick-card h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 13px;
+}
+
+div.quick-card button {
+  width: calc(var(--main-px) * 3);
+  border-radius: 0;
+  margin-top: -20px;
+}

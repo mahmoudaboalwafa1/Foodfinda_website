@@ -1,0 +1,50 @@
+.customer {
+  background-image: url("../../../assets/images/body-bg.png");
+  background-size: cover;
+  background-position-y: 450vh;
+}
+
+.customer .container {
+  flex-direction: row;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .customer .container {
+    flex-direction: column;
+  }
+}
+
+.customer h4 {
+  color: var(--green-color);
+  font-weight: normal;
+  padding: 15px 0;
+}
+
+.customer p {
+  color: white;
+  border: 1px solid white;
+  padding: 20px;
+  line-height: 2;
+}
+
+.customer ul {
+  gap: 15px;
+  padding-top: 60px;
+  display: flex;
+  place-content: center;
+}
+
+.customer svg {
+  background-color: white;
+  width: var(--main-px);
+  height: var(--main-px);
+  padding: 15px;
+  cursor: pointer;
+}
+
+.customer svg:first-child,
+.customer svg:hover {
+  background-color: var(--green-color);
+  color: white;
+}

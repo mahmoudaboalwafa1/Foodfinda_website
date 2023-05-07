@@ -1,0 +1,56 @@
+.app-contact {
+  background-size: cover;
+  background-position: 400vh;
+}
+
+section.contact {
+  background-image: url("../../../assets/images/contact-bg.png");
+  padding-bottom: var(--main-px);
+}
+
+div.no-pad {
+  padding-bottom: 0;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 15px auto;
+}
+
+.contact form input,
+.contact textarea {
+  margin-top: 20px;
+  padding: 18px;
+  outline: 2px solid var(--green-color);
+}
+
+.contact .btn-green {
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  margin: 15px auto;
+  cursor: pointer;
+}
+
+.contact div:last-of-type {
+  background-color: white;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .contact div:last-of-type {
+    flex-direction: column;
+  }
+
+  .contact div:last-of-type p {
+    text-align: center;
+  }
+}
+
+.contact div:last-of-type p {
+  flex: 1;
+  padding-left: 80px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}

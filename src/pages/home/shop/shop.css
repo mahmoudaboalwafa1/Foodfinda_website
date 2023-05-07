@@ -1,0 +1,61 @@
+section.shop {
+  background-color: var(--green-color);
+  color: white;
+}
+
+.shop .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.shop .main-title {
+  text-align: left;
+  font-size: 2.5rem;
+  margin: 0;
+  max-width: 220px;
+}
+
+.shop .main-title span {
+  color: black;
+}
+
+.shop p {
+  max-width: 670px;
+  padding: 10px 0;
+}
+
+.shop ul {
+  display: flex;
+  gap: 20px;
+}
+
+.shop button:last-of-type {
+  background-color: white;
+  padding: 15px 30px;
+  margin: 30px 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.shop button:last-of-type:hover {
+  background-color: var(--yellow-color);
+  color: black;
+}
+
+.shop img.mobile {
+  margin-top: 20px;
+  max-width: calc(var(--main-px) * 9);
+  height: calc(var(--main-px) * 9);
+}
+
+@media (max-width: 768px) {
+  .shop .container {
+    flex-direction: column;
+  }
+
+  .shop img {
+    width: 100%;
+  }
+}

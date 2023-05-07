@@ -1,0 +1,124 @@
+section.landing {
+  background-image: url("../../../assets/images/body-bg.png");
+}
+
+section.landing p {
+  text-align: center;
+  background-color: white;
+  width: calc(var(--main-px) * 7);
+  margin: 15px auto;
+  font-size: 3rem;
+  border-radius: 6px;
+  color: var(--green-color);
+  font-weight: bold;
+}
+
+.landing ul {
+  display: none;
+}
+
+ul.show {
+  background-color: white;
+  width: 180px;
+  padding: 10px;
+  margin-top: 3px;
+  display: block;
+  border-radius: 6px;
+  position: absolute;
+  top: calc(var(--main-px) * 10);
+}
+
+.show li,
+.landing button {
+  padding: 10px;
+  width: 180px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.landing button {
+  padding: 30px 0;
+  font-size: 1rem;
+  display: flex;
+  place-content: center;
+}
+
+.landing .btn-green {
+  justify-content: center;
+}
+
+.landing button svg {
+  padding-left: 10px;
+}
+
+div.filter {
+  display: flex;
+  padding-top: var(--main-px);
+}
+
+div.filter div {
+  display: flex;
+  flex-direction: column;
+}
+
+div.filter form {
+  justify-content: space-around;
+  height: 78px;
+  margin-left: 40px;
+  background-color: white;
+}
+
+div.filter input {
+  width: 90%;
+  height: 100%;
+  padding: 0 40px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+}
+
+.landing form:focus-within {
+  outline: solid 3px #999;
+  border-radius: 6px;
+}
+
+.right {
+  background-color: white;
+  right: 4%;
+}
+
+.left {
+  background-color: var(--yellow-color);
+  left: 4%;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  height: var(--main-px);
+  width: var(--main-px);
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.left:hover,
+.right:hover {
+  background-color: var(--yellow-color);
+}
+
+@media (max-width: 768px) {
+  div.filter button {
+    display: none;
+  }
+
+  div.filter form {
+    width: 80%;
+  }
+
+  .left,
+  .right {
+    padding: 0px;
+    width: calc(var(--main-px) / 2);
+    height: calc(var(--main-px) / 2);
+  }
+}

@@ -1,0 +1,8 @@
+.error-page {
+  background-color: var(--green-color);
+  color: white;
+  -webkit-text-stroke: 1px red;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+}
