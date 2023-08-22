@@ -67,6 +67,10 @@ header li svg.menu {
     cursor: pointer;
   }
 }
+
+header li a {
+  color: white;
+}
 /* end media screen medium */
 
 /* start media screen large  */
